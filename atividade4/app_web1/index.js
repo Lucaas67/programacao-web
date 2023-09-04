@@ -3,25 +3,25 @@ const express = require('express');
 
 const app = express();
 
-app.get("/somar/:n1/:n2", function(req, res){
+app.get("/somar/:a/:b", function(req, res){
     let n1 = req.params.n1;
     let n2 = req.params.n2;
     res.send(`${n1}+ ${n2} = ${calc.somar(n1,n2)}`); 
 });
 
-app.get("/subtrair/:n1/:n2", function(req, res){
+app.get("/subtrair/:a/:b", function(req, res){
     let n1 = req.params.n1;
     let n2 = req.params.n2;
     res.send(`${n1}+ ${n2} = ${calc.subtrair(n1,n2)}`); 
 });
 
-app.get("/multiplicar/:n1/:n2", function(req, res){
+app.get("/multiplicar/:a/:b", function(req, res){
     let n1 = req.params.n1;
     let n2 = req.params.n2;
     res.send(`${n1}+ ${n2} = ${calc.multiplicar(n1,n2)}`); 
 });
 
-app.get("/dividir/:n1/:n2", function(req, res){
+app.get("/dividir/:a/:b", function(req, res){
     let n1 = req.params.n1;
     let n2 = req.params.n2;
     res.send(`${n1}+ ${n2} = ${calc.dividir(n1,n2)}`); 
