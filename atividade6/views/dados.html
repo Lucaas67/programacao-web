@@ -7,6 +7,21 @@
     <title>Dados</title>
 </head>
 <body>
-    
+    <script>
+        // Função para obter os parâmetros da URL
+        function getURLParameter(name) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(name);
+        }
+
+        // Recupere os dados da URL
+        const nome = getURLParameter('nome');
+        const endereco = getURLParameter('endereco');
+        const tel = getURLParameter('tel');
+        const data = getURLParameter('data');
+
+        // Use os dados como quiser
+        alert(`Nome: ${nome}\nEndereço: ${email}\nTelefone: ${tel}\nData de nascimento: ${data}`);
+    </script>
 </body>
 </html>
